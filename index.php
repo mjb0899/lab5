@@ -7,6 +7,7 @@
 <p>
     <?php
     echo "Hello World";
+    echo "second Hello World";
     ?>
 </p>
 </body>
