@@ -7,11 +7,13 @@
 <p>Syaing hello!TO</p>
 
 <?php
+$planet=$_GET["planet"];
+echo"hellow".$planet;
 
-echo"hellow".$type;
-$query = $_GET["query"];
-$type= $_GET["type"];
-echo"The query is".$cat."and the type is". $type;
+
+
+$username=$_GET["planet"];
+echo "Hello".$username."This is username printing";
 ?>
 </body>
 </html>
