@@ -31,9 +31,21 @@
     if($myage>16){
         echo "specs";
     }elseif ($myage<16){
-        echo"no specs";
+        echo"no specs <br>";
     }
 
+        $number=1;
+        switch(number){
+            case 1:
+                echo "one";
+                break;
+            case 2:
+                echo "two";
+                break;
+            default:
+                echo "what the fuck";
+                break;
+        }
     ?>
 </p>
 </body>
