@@ -4,16 +4,16 @@
     <title>hello Selector</title>
 </head>
 <body>
-<p>Syaing hello!TO</p>
+<p>Saying hello from html!<br></p>
 
 <?php
 $planet=$_GET["planet"];
-echo"hellow".$planet;
+echo"hello"." ".$planet;
 
 
 
 $username=$_GET["planet"];
-echo "Hello".$username."This is username printing";
+echo "<br>Hello"." ".$username."This is username printing<br>";
 ?>
 </body>
 </html>
