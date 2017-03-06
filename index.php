@@ -11,7 +11,7 @@
 <p>
     <?php
     echo "Hello World";
-    echo "this break \n"."or this is".\n."or this is"."or";
+    echo "this break \n"."or this or";
     echo "this is \r\n"."and we good to go";
     echo "Hello"." "."World"."!";
     echo 5*7;
