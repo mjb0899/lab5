@@ -35,7 +35,7 @@
     }
 
         $number=1;
-        switch(number){
+        switch($number){
             case 1:
                 echo "one";
                 break;
