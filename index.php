@@ -24,7 +24,7 @@
     {
         echo "Hi".$myname. "you are logged in";
     }
-    echo "the value you entered is";
+    echo "the value you entered is <br>";
     echo $_GET['age'];
     $myage=20;
     echo $myage;
