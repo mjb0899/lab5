@@ -51,11 +51,11 @@
         $myarray=array("a","b","c");
         $mynewarray=array("a",1,"b",9);
 
-        for ($i=1;$i<4;$i++){
+        for ($i=0;$i<3;$i++){
             echo $mynewarray[$i];
         }
         foreach ($mynewarray as $x){
-            print "$x";
+            print "<p>$x</p>";
         }
 
     ?>
