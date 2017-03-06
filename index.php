@@ -6,7 +6,7 @@
 <body>
 <h1>html says hi</h1>
 <form name="form" action="" method="get">
-    <input type="text" name="age" id="subject" value="Car Loan">
+    <input type="text" name="age" id="subject" value="21">
 </form>
 <p>
     <?php
@@ -26,7 +26,7 @@
     }
     echo "the value you entered is";
     echo $_GET['age'];
-    $myage=$_GET['age'];
+    $myage=20;
     echo $myage;
     if($myage>16){
         echo "specs";
