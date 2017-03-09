@@ -4,28 +4,20 @@
     <title>hello Selector</title>
 </head>
 <body>
-<p>WHere would you like say hello?</p>
-<ul>
-    <li><a href="printer.php?planet=earth">earth</a></li>
-    <li><a href="printer.php?planet=mars">mars</a></li>
-    <li><a href="printer.php?planet=uranus">uranus</a></li>
-</ul>
+<p>PHP LOGIN FORM</p>
 
-<p>Learning post request</p>
-<form action="formResponse.php" method="post">
-    <label>Forename</label>
-    <input type="text" name="forename">
-    <label>Surname</label><input type="text" name="surname">
-    <input type="submit" value="Submit">
+
+<form action="login.php" method="post">
+    <label>username</label>
+    <input type="text" name="username">
+    <label>Password</label><input type="text" name="password">
+    <input type="submit" value="login">
 </form>
-
+<div class="error"><?php // echo $err or; ?><?php // echo $user name; echo $passwor d; ?></ div>
 
 <?php
-$location="printer.php?user=mike";
-HEADER($location);
 
-$username=$_GET["planet"];
- echo "Hello".$username."This is username printing";
+
 ?>
 </body>
 </html>
