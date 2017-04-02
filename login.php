@@ -12,7 +12,7 @@ else{
 
 $sql="SELECT uid FROM mytable WHERE uname='$username'and password='$password'";
 
-$result=mysqli_query($link,$sql);
+$result=mysqli_query($db,$sql);
 if(mysqli_num_rows($result)==1)
 {
     header("location:formResponse.php");
