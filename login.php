@@ -10,9 +10,20 @@ else{
     $password=$_POST["password"];
 }
 
-$sql="SELECT uid FROM mytable WHERE uname='$username'and password='$password'";
+//$sql="SELECT uid FROM mytable WHERE uname='$username'and password='$password'";
+$sql="SELECT uid FROM mytable WHERE  uname = ?"." and password = ?";
 
-$result=mysqli_query($db,$sql);
+$stmt=$db->prepare($sql);
+$stmt->bind_param('ss',$username,$password);
+$stmt-> execute();
+$stmt->bind_result($uid);
+if($row = $stmt->fetch()){
+header("location:formResponse.php");
+}else{
+    echo "Incorrect Username";
+}
+
+/*$result=mysqli_query($db,$sql);
 if(mysqli_num_rows($result)==1)
 {
     header("location:formResponse.php");
@@ -20,3 +31,4 @@ if(mysqli_num_rows($result)==1)
 else{
     echo "Incorrect Username";
 }
+*/
