@@ -1,6 +1,6 @@
 <?
 $connectstr_dbhost = 'MYSQLCONNSTR_localdb';
-$connectstr_dbname = 'dblab5';
+$connectstr_dbname = '';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
 foreach ($_SERVER as $key => $value) {
