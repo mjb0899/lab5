@@ -13,7 +13,7 @@
     <label>Password</label><input type="text" name="password">
     <input type="submit" value="login">
 </form>
-<div class="error"><?php // echo $err or; ?><?php // echo $user name; echo $passwor d; ?></ div>
+<div class="error"><?php // echo $err or; ?><?php // echo $user name; echo $password; ?></ div>
 
 <?php
 
